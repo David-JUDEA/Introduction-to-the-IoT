@@ -11,7 +11,7 @@ The project was developed step by step, covering the following features:
 - **Flashing scenarios:** LEDs in parallel, running lights, and alternating flashing.
 - **Speed control:** Use of a potentiometer to vary the flashing speed in real time.
 
-![til](./assets/IOT1-Scenario-4.gif)
+![til](ETNA_ThermOS/assets/IOT1-Scenario-4.gif)
 
 ---
 
@@ -21,7 +21,7 @@ The project was developed step by step, covering the following features:
 - **Serial monitor:** Raw display for debugging.
 - **I2C LCD screen:** Formatted display of values in real time.
 
-![til](./assets/IOT2-LCDScensor.gif)
+![til](ETNA_ThermOS/assets/IOT2-LCDScensor.gif)
 
 ---
 
@@ -38,7 +38,7 @@ The system alerts the user via a specific color code:
   - 🟦 30% - 60% (Comfortable)
   - 🟥 > 70% (Humid)
 
-![til](./assets/IOT3-LED-TEMP&HUMI.gif)
+![til](ETNA_ThermOS/assets/IOT3-LED-TEMP&HUMI.gif)
 
 ---
 
@@ -47,7 +47,7 @@ The system alerts the user via a specific color code:
 - **LED progress bar:** Visual simulation of a thermometer (the LEDs light up gradually as the temperature rises).
 - **Dynamic alerts:** Alert messages on the LCD screen if critical thresholds are exceeded.
 
-![til](./assets/IOT4-BETTER-LIGHTING.gif)
+![til](ETNA_ThermOS/assets/IOT4-BETTER-LIGHTING.gif)
 
 ---
 
