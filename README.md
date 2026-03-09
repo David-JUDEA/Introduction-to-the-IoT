@@ -1,3 +1,4 @@
+![banner](ETNA_ThermOS/assets/banner-iot.svg)
 # Introduction-to-the-IoT
 
 **ETNA ThermOS** is a smart weather station based on Arduino. This project was carried out as part of the **Introduction to the IOT** module at ETNA. It measures ambient temperature and humidity using a DHT11 sensor, displays the data on an LCD screen, and provides dynamic visual indicators (LEDs) depending on the conditions.
