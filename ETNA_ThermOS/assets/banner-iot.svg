@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ╔══════════════════════════════════════════════════════════╗ -->
+  <!-- ║  FOND — modifie stop-color pour changer la couleur       ║ -->
+  <!-- ╚══════════════════════════════════════════════════════════╝ -->
+  <rect width="1200" height="300" fill="url(#bg)" rx="12"/>
+
+  <!-- BORDURE — stroke="#30363d" = couleur bordure | stroke-width = épaisseur -->
+  <rect width="1200" height="300" fill="none" stroke="#30363d" stroke-width="1" rx="12"/>
+
+
+  <!-- ╔══════════════════════════════════════════════════════════╗ -->
+  <!-- ║  DÉCORATIONS DE FOND (gauche)                            ║ -->
+  <!-- ║  stroke="#21262d" = couleur  |  stroke-width = épaisseur ║ -->
+  <!-- ╚══════════════════════════════════════════════════════════╝ -->
+  <circle cx="90"  cy="80"  r="4" fill="none" stroke="#21262d" stroke-width="1.5"/>
+  <circle cx="190" cy="55"  r="4" fill="none" stroke="#21262d" stroke-width="1.5"/>
+  <circle cx="140" cy="170" r="4" fill="none" stroke="#21262d" stroke-width="1.5"/>
+  <circle cx="55"  cy="210" r="4" fill="none" stroke="#21262d" stroke-width="1.5"/>
+  <circle cx="240" cy="230" r="4" fill="none" stroke="#21262d" stroke-width="1.5"/>
+  <!-- Lignes reliant les nœuds — x1,y1 = départ | x2,y2 = arrivée -->
+  <line x1="90"  y1="80"  x2="190" y2="55"  stroke="#21262d" stroke-width="1"/>
+  <line x1="90"  y1="80"  x2="140" y2="170" stroke="#21262d" stroke-width="1"/>
+  <line x1="140" y1="170" x2="55"  y2="210" stroke="#21262d" stroke-width="1"/>
+  <line x1="140" y1="170" x2="240" y2="230" stroke="#21262d" stroke-width="1"/>
+  <line x1="190" y1="55"  x2="240" y2="230" stroke="#21262d" stroke-width="1"/>
+
+  <!-- DÉCORATIONS DE FOND (droite) -->
+  <circle cx="1060" cy="70"  r="4" fill="none" stroke="#21262d" stroke-width="1.5"/>
+  <circle cx="1160" cy="110" r="4" fill="none" stroke="#21262d" stroke-width="1.5"/>
+  <circle cx="1100" cy="200" r="4" fill="none" stroke="#21262d" stroke-width="1.5"/>
+  <circle cx="1020" cy="250" r="4" fill="none" stroke="#21262d" stroke-width="1.5"/>
+  <line x1="1060" y1="70"  x2="1160" y2="110" stroke="#21262d" stroke-width="1"/>
+  <line x1="1160" y1="110" x2="1100" y2="200" stroke="#21262d" stroke-width="1"/>
+  <line x1="1100" y1="200" x2="1020" y2="250" stroke="#21262d" stroke-width="1"/>
+  <line x1="1060" y1="70"  x2="1100" y2="200" stroke="#21262d" stroke-width="1"/>
+
+  <!-- TAG CODE haut droite — font-size = taille | fill = couleur -->
+  <text x="1155" y="35" font-family="monospace" font-size="16" fill="#21262d">&lt;/&gt;</text>
+
+  <!-- BINAIRE bas gauche -->
+  <text x="30" y="280" font-family="monospace" font-size="11" fill="#21262d">01001001 01101111 01010100</text>
+
+  <!-- RECTANGLE décoratif haut-centre -->
+  <rect x="572" y="14" width="56" height="22" rx="4" fill="none" stroke="#21262d" stroke-width="1.5"/>
+  <line x1="572" y1="24" x2="628" y2="24" stroke="#21262d" stroke-width="1"/>
+
+
+  <!-- ╔══════════════════════════════════════════════════════════╗ -->
+  <!-- ║  TITRE PRINCIPAL                                         ║ -->
+  <!-- ║  font-size = taille | fill = couleur | y = position verticale ║ -->
+  <!-- ╚══════════════════════════════════════════════════════════╝ -->
+  <text
+    x="600" y="145"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+    font-size="58"
+    font-weight="800"
+    fill="#ffffff"
+    text-anchor="middle"
+    letter-spacing="-1"
+  >Introduction-to-the-IoT</text>
+
+  <!-- SOUS-TITRE — fill="#8b949e" = gris GitHub | font-size = taille -->
+  <text
+    x="600" y="180"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+    font-size="20"
+    font-weight="400"
+    fill="#8b949e"
+    text-anchor="middle"
+    letter-spacing="0.5"
+  >Project Showcase — David JUDEA</text>
+
+
+  <!-- ╔══════════════════════════════════════════════════════════╗ -->
+  <!-- ║  ICÔNES BLEUES                                           ║ -->
+  <!-- ║  stroke="#58a6ff" = bleu GitHub                         ║ -->
+  <!-- ║  transform="translate(X, Y)" = déplace toute l'icône    ║ -->
+  <!-- ╚══════════════════════════════════════════════════════════╝ -->
+
+  <!-- ══ ICÔNE 1 : WIFI ══
+       Les arcs WiFi : chaque <path> est un demi-cercle
+       "M x,y A rayon,rayon 0 0,1 x2,y" — augmente rayon pour agrandir l'arc
+       stroke-width = épaisseur du trait
+       Déplace tout en changeant translate(X, Y) -->
+  <g transform="translate(481, 205)" fill="none" stroke="#58a6ff" stroke-width="2.2" stroke-linecap="round" filter="url(#glow)">
+    <path d="M3,20 A30,30 0 0,1 44,20"/>
+    <path d="M9,27 A25,30 0 0,1 38,27"/>
+    <path d="M16,34 A12,14 0 0,1 31,34"/>
+    <!-- Point central — cx/cy = position | r = rayon -->
+    <circle cx="23.4" cy="42" r="3" fill="#58a6ff" stroke="none"/>
+  </g>
+
+  <!-- ══ ICÔNE 2 : PUCE / CHIP ══
+       rect x,y,width,height = position et taille du boitier
+       Les <line> = broches de la puce
+       x1,y1 → x2,y2 : point de départ → point d'arrivée de chaque broche -->
+  <g transform="translate(578, 208)" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linecap="round" filter="url(#glow)">
+    <rect x="8" y="8" width="30" height="30" rx="3"/>
+    <line x1="15" y1="8"  x2="15" y2="2"/>
+    <line x1="23" y1="8"  x2="23" y2="2"/>
+    <line x1="31" y1="8"  x2="31" y2="2"/>
+    <line x1="15" y1="38" x2="15" y2="44"/>
+    <line x1="23" y1="38" x2="23" y2="44"/>
+    <line x1="31" y1="38" x2="31" y2="44"/>
+    <line x1="8"  y1="15" x2="2"  y2="15"/>
+    <line x1="8"  y1="23" x2="2"  y2="23"/>
+    <line x1="8"  y1="31" x2="2"  y2="31"/>
+    <line x1="38" y1="15" x2="44" y2="15"/>
+    <line x1="38" y1="23" x2="44" y2="23"/>
+    <line x1="38" y1="31" x2="44" y2="31"/>
+    <rect x="15" y="15" width="16" height="16" rx="1"/>
+  </g>
+
+  <!-- ══ ICÔNE 3 : RÉSEAU / HUB ══
+       1 nœud central + 4 satellites parfaitement alignés (haut / bas / gauche / droite)
+       circle cx,cy = position | r = rayon du nœud
+       line x1,y1 → x2,y2 = segment reliant le centre au satellite -->
+  <g transform="translate(672, 207)" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linecap="round" filter="url(#glow)">
+    <!-- Centre -->
+    <circle cx="23" cy="23" r="5.5"/>
+    <!-- Haut -->
+    <circle cx="23" cy="4"  r="3"/>
+    <line   x1="23" y1="17.5" x2="23" y2="7"/>
+    <!-- Bas -->
+    <circle cx="23" cy="42" r="3"/>
+    <line   x1="23" y1="28.5" x2="23" y2="39"/>
+    <!-- Gauche -->
+    <circle cx="4"  cy="23" r="3"/>
+    <line   x1="17.5" y1="23" x2="7"  y2="23"/>
+    <!-- Droite -->
+    <circle cx="42" cy="23" r="3"/>
+    <line   x1="28.5" y1="23" x2="39" y2="23"/>
+  </g>
+
+</svg>
